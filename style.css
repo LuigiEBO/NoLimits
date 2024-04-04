@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+  --title-color: #b52184;
+  --text-color: #312d64;
+  --main-color: #312d64;
+  --button-color: #343193;
+}
+body {
+  width: 32.5rem;
+  margin: auto;
+  background-color: #f9f4fb;
+  font-family: "Mulish", sans-serif;
+}
+img {
+  width: 32.5rem;
+}
+.title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+h2 {
+  font-size: 3rem;
+  color: var(--title-color);
+}
+p {
+  font-size: 1.9rem;
+  color: var(--text-color);
+}
+header button {
+  border: 3px solid var(--title-color);
+  border-radius: 9999px;
+  padding: 2rem 0.8rem;
+  margin: auto;
+  display: flex;
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+  cursor: pointer;
+}
+button img {
+  width: 4rem;
+}
+main {
+  background-color: var(--main-color);
+  padding: 3rem 3rem 1rem;
+  width: 34rem;
+  margin: auto;
+}
+.box {
+  background-color: #fff;
+  border-radius: 0.8rem;
+  padding: 1.6rem;
+  margin-bottom: 3rem;
+}
+.box img {
+  width: 5rem;
+}
+.content-box h2 {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.content-box p {
+  font-size: 1.5rem;
+}
+aside {
+  padding: 6.4rem 1.6rem 4.4rem;
+}
+fieldset {
+  display: flex;
+  border: none;
+}
+aside h2 {
+  margin-bottom: 4rem;
+}
+input {
+  background-image: url('./assets/person.svg');
+  background-repeat: no-repeat;
+  background-position: 0.6rem center;
+  background-size: 1.8rem;
+  padding: 1rem 3rem 1rem 3rem;
+  border: 2px solid var(--main-color);
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  width: 30rem;
+}
+input::placeholder {
+  color: var(--main-color);
+}
+#email {
+  background-image: url('./assets/Vector\ \(7\).svg');
+}
+#msg {
+  background-image: none;
+  padding: 0.6rem 2rem 4rem;
+}
+aside button {
+  background-color: var(--button-color);
+  color: #fff;
+  border: none;
+  padding: 1.6rem;
+  border-radius: 1rem;
+}
+aside img {
+  display: none;
+}
+footer {
+  background-color: var(--button-color);
+  padding: 1.6rem;
+}
+footer p {
+  font-size: 1.6rem;
+  text-align: center;
+    color: #fff;
+}
+
+@media (min-width: 800px) {
+  body {
+    width: 100vw;
+  }
+  header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  header .astronauta {
+    width: 50rem;
+  }
+  main {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .box {
+    height: 30rem;
+    padding: 1.6rem;
+    width: 30rem;
+  }
+  aside {
+    display: flex;
+    justify-content: center;
+  }
+}
